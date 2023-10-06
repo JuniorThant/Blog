@@ -1,0 +1,9 @@
+-Database create
+-Database config
+-Model{app/models} [manage db table] <php artisan make:model Post -m>
+-Migration{database/migrations} [assign db column]
+-Migrate(build db table column)
+-view{resources/views}
+-routing system{routes/web.php}
+-controller{app/Http/Controllers}
+-MVC settings setup
