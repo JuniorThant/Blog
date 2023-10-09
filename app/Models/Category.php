@@ -14,4 +14,12 @@ class Category extends Model
     {
         return $this->hasMany(Blogpost::class);
     }
+
+	public static function getFilteredCategories($search)
+	{
+	    return Category::when($search, function ($query) use ($search) {
+	        $query->where('name', 'LIKE', '%' . $search . '%');
+	    })->get();
+	}
+
 }

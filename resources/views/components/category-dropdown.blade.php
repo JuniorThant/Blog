@@ -7,8 +7,8 @@
             <div class="listsection">
                 <a class="dropdown-item category-link" data-category="{{ $category->filename }}">
                     {{ $category->name }}
-</a>
-</div>
+                </a>
+            </div>
         @endforeach
+        </div>
 </div>
-    </div>

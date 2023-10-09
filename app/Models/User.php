@@ -46,21 +46,35 @@ class User extends Authenticatable
     {
         return $this->hasMany(Blogpost::class);
     }
+
     public function likedBlogposts()
     {
         return $this->belongsToMany(Blogpost::class);
     }
+
     public function isSubscribed($blogpost)
     {
         return auth()->user()->likedBlogposts && 
         auth()->user()->likedBlogposts->contains('id', $blogpost->id);
     }
+
     public function getNameAttribute($value)
     {
         return ucwords($value);
     }
+
     public function isAdmin()
     {
         return $this->is_admin === 1;
+    }
+    
+    public static function searchUsers($search)
+    {
+        return User::when($search, function ($query) use ($search) {
+            $query->where('name', 'LIKE', '%' . $search . '%')
+                ->orWhere('username', 'LIKE', '%' . $search . '%')
+                ->orWhere('email', 'LIKE', '%' . $search . '%')
+                ->orWhere('is_admin', 'LIKE', '%' . $search . '%');
+        })->get();
     }
 }

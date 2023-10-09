@@ -17,10 +17,12 @@ class Comment extends Model
     {
         return $this->belongsTo(Blogpost::class);
     }
+
     public function author()
     {
         return $this->belongsTo(User::class,'user_id');
     }
+    
     public function replies()
     {
         return $this->hasMany(Reply::class);
