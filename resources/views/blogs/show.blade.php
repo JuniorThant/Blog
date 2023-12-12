@@ -4,7 +4,7 @@
         <section id="showeachblog">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-8" style="position:relative;">
+                    <div class="col-lg-8" style="position:relative;">
                         <div class="card my-5">
                             <div class="p-3">
                                 <img src="/storage/{{ $blogpost->thumbnail }}" class="card-img-top" alt="...">
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-lg-4">
                         <div style="position:relative;">
                             <x-comments :comments="$blogpost->comments" :blogpost="$blogpost" />
                         </div>
@@ -45,7 +45,6 @@
             </div>
         </div>
         <!-- Include JavaScript libraries -->
-        <script src="{{ asset('js/source.js') }}" defer></script>
     </x-slot>
 </x-layout>
 

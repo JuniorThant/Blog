@@ -2,7 +2,7 @@
 
         @foreach($replies as $reply)
             <div class="my-2 replyparent" style="position:relative;">
-                <div class="replyedittemplate" style="position:absolute; top:0;left:150px;z-index:1;display:none;">
+                <div class="replyedittemplate" style="position:absolute; top:0;left:38%;z-index:1;display:none;">
                     <ul class="bg-white border border-1" style="width:120px;list-style:none;padding:0;">
                         <li><a class="dropdown-item editreply" data-reply_body="{{ $reply->replybody }}" data-reply_id="{{ $reply->id }}"><i class="bi bi-pen-fill"></i>Edit</a></li>
                         <li><a class="dropdown-item deletereply"><i class="bi bi-trash-fill"></i>Delete</a></li>

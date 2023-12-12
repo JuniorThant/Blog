@@ -6,9 +6,9 @@
                 <img src="images/youth.jpg" alt="" class="img-fluid" style="height: 450px;">
             </div>
             <div class="col-md-6">
-                <video src="images/youthblogs.mp4" autoplay loop muted style="height: 300px;"></video>
+                <img src="images/logo1.png" class="img-fluid mb-5" style="height:200px">
                 <p class="lead mb-4 lh-lg">
-                    Welcome to Youth Blogs! You can read a lot of interesting and knowledgeable blogs from our website. Besides, content creators are also warmly welcome. Create an account and post a blog for the youth society. If you have inquiries, you can contact our admins through <a href="">contact us</a>.
+                    Welcome to Tomorrow Trend! You can read a lot of interesting, trending and knowledgeable blogs from our website. Besides, content creators are also warmly welcome. Create an account and post a blog for the society. If you have inquiries, you can contact our admins through email <a href="">tomorrowtrend309@gmail.com</a>.
                 </p>
                 <p class="fs-3">"Empowering the Next Generation through Expression and Engagement."</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">

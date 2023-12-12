@@ -26,6 +26,11 @@ class BlogpostController extends Controller
         return view('blogs.index', ['blogposts' => $query]);
     }
 
+    public function aboutus()
+    {
+        return view('blogs.aboutus');
+    }
+
     public function show(Blogpost $blogpost)
     {
         $randomBlogs = Blogpost::inRandomOrder()->take(3)->get();

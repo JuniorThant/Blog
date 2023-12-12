@@ -72,6 +72,7 @@
                     <div class="container">
                         <div class="row d-flex justify-content-end">
                         <form action="/admin/category/create" method="post" class="my-1">
+                            @csrf
         <div class="input-group mb-3">
           <input
           name="searchcategory"
@@ -119,6 +120,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="{{ asset('js/project.js') }}" defer></script>
+    <script src="{{ asset('js/all.js') }}" defer></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 <div class="findme">
     <div class="my-3" style="position:relative;">
-        <div class="edittemplate" style="position:absolute; top:0;left:200px;z-index:1;display:none;">
+        <div class="edittemplate" style="position:absolute; top:0;left:38%;z-index:1;display:none;">
             <ul class="bg-white border border-1" style="width:200px;list-style:none;padding:0;">
                 <li><a class="dropdown-item editComment" data-comment_body="{{ $comment->body }}" data-comment_id="{{ $comment->id }}"><i class="bi bi-pen-fill"></i>Edit</a></li>
                 <li><a class="dropdown-item deleteComment"><i class="bi bi-trash-fill"></i>Delete</a></li>

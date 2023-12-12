@@ -6,5 +6,6 @@
         <a style="font-size:19px;" class="list-group-item border border-0" href="/blogposts/profile"><i class="bi bi-arrow-left-circle-fill"></i> Back</a>
         <a style="font-size:19px;" class="list-group-item border border-0" href="#staticBackdrop" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-box-arrow-left"></i> Logout</a>
     </div>
+    <div class="profileline"></div>
 </div>
 

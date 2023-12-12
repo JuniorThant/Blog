@@ -62,6 +62,9 @@
         
         <x-logout></x-logout>
   
-        <script src="{{ asset('js/source.js') }}" defer></script>
+        <script src="{{ asset('js/all.js') }}" defer></script>
+        <script src="{{ asset('js/imagechange.js') }}" defer></script>
+        <script>
+        </script>
     </x-slot>
 </x-layout>

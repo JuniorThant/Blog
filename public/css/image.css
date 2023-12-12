@@ -25,12 +25,22 @@ body #showeachblog img{
     background-color:black;
     height:3px;
     width: 100%;
-    position:absolute;
+   
+}
+
+.profileline{
+    background-color:black;
+    height:3px;
+    width: 100%;
+   
 }
 /* Show the line on medium and larger screens */
 @media (min-width: 768px) {
     .verticalline.d-md-block {
         display: block;
+    }
+    .profileline{
+        display:none;
     }
 }
 .hoveractive{

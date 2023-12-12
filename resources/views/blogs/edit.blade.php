@@ -53,6 +53,7 @@
             <div class="col-md-3"></div>
         </div>
         <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
+        <script src="{{ asset('js/imagechange.js') }}" defer></script>
         <script>
             ClassicEditor
                 .create(document.querySelector('#editor'))
@@ -60,6 +61,5 @@
                     console.error(error);
                 });
         </script>
-        <script src="{{ asset('js/source.js') }}" defer></script>
     </x-slot>
 </x-layout>

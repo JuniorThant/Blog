@@ -1,6 +1,6 @@
 <div class="row">
         @forelse($blogposts as $blogpost)
-        <div class="col-md-4 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4">
             <x-blog-card :blogpost="$blogpost"/>
         </div>
         @empty

@@ -5,7 +5,7 @@
 		        @endif
     		<x-hero />
     		<x-blog-section :blogposts="$blogposts"/>
-			<script src="{{ asset('js/source.js') }}" defer></script>
+			<script src="{{ asset('js/dropdown.js') }}" defer></script>
     </x-slot>
 </x-layout>
 

@@ -39,6 +39,11 @@ use App\Models\Weather;
 Route::get('/blogposts',[BlogpostController::class,'index']);
 Route::post('/blogposts',[BlogpostController::class,'index']);
 
+Route::get('/blogposts/aboutus', function () {
+    return view('blogs.aboutus');
+});
+
+
 Route::get('/article/{blogpost:filename}',[BlogpostController::class,'show'])->where('something','[A-z\d\-_]+');
 
 Route::post('/article/{blogpost:filename}/comments',[CommentController::class,'store']);
@@ -75,6 +80,7 @@ Route::post('/article/edit/{blogpost:filename}',[BlogpostController::class,'upda
 Route::get('/article/edit/{blogpost:filename}/{id}',[BlogpostController::class,'destroy'])->middleware('auth');
 
 Route::get('/blogposts/profile',[UserController::class,'index'])->middleware('auth');
+Route::post('/blogposts/profile',[UserController::class,'index'])->middleware('auth');
 
 Route::get('/blogposts/profile/editprofile',[UserController::class,'edit'])->middleware('auth');
 Route::post('/blogposts/profile/editprofile',[UserController::class,'update'])->middleware('auth');

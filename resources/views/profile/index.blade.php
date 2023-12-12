@@ -62,11 +62,24 @@
         @else
             <div class="container text-center my-5">
                 <h1 class="display-5 fw-bold m-5">My Blogs</h1>
+                <div>
+                    <x-category-dropdown />
+                </div>
+                <form action="/blogposts/profile" class="my-3">
+                    <div class="input-group mb-3">
+                        @if(request('category'))
+                            <input name="category" type="hidden" value="{{ request('category') }}" />
+                        @endif
+                        <input name="search" value="{{ request('search') }}" type="text" autocomplete="false" class="form-control" placeholder="Search Blogs..." />
+                        <button class="input-group-text bg-primary text-light" id="basic-addon2" type="submit">Search</button>
+                    </div>
+                </form>
                 <div class="col-md-12">
                     <h3 class="text-center text-danger mt-2 mb-5">No Blogs Found! <a href="/blogposts/create">Create</a> One!</h3>
                 </div>
             </div>
         @endif
+        <script src="{{ asset('js/dropdown.js') }}" defer></script>
     </x-slot>
 </x-layout>
 
